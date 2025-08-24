@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rodrigo de FI
+    </title>
+
+    <link rel="stylesheet" href="../CSS/site-style.css">
+    <link rel="stylesheet" href="../CSS/style-hwpm.css">
+</head>
+
+<body>
+    <header>
+        <div class="limitador">
+            <a href="../index.html" class="Home">
+                <h1>RODRIGO</h1>
+            </a>
+            <p>
+                Site de Hardware
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="limitador">
+            <a href="hwcpu.html">CPU</a>
+            <a href="hwgpu.html">GPU</a>
+            <a href="hwpm.html">Placa-Mãe</a>
+            <a href="hwram.html">RAM</a>
+            <a href="hwssd-hdd.html">SSD / HDD</a>
+            <a href="hwfonte.html">Fonte</a>
+            <a href="perifericos.html">Periféricos</a>
+        </div>
+    </nav>
+
+    <main>
+        <!--Código aq-->
+        <h1>Placa-Mãe</h1>
+
+        <div class="bloco">
+            <img src="../CONTENT/mae/Placa Mãe Gigabyte.webp" alt="Placa Mãe Gigabyte" class="componente">
+        </div>
+
+        <div class="bloco">
+            <p>
+                A placa-mãe, ou motherboard, é a base, a ponte, de todos os componentes do computador. Ela é responsável
+                por conectar e permitir que todas as outras peças, como CPU, memória RAM, GPU, dispositivos de
+                armazenamento, fonte, etc, possam conversar entre si.
+            </p>
+        </div>
+        <div class="horizontal">
+            <div class="bloco">
+                <h2>Formatos Físicos</h2>
+                <p>
+                    Existem quatro formatos padrões de placa-mãe:
+                </p>
+                <p> <b>E-ATX / Extended ATX</b> - Formato ATX maior e com mais slots, tende a ser mais caro.</p>
+                <p> <b>ATX</b> - o formato ATX é o padrão mais comum, grande, com um maior número de slots disponíveis
+                </p>
+                <p> <b>Micro-ATX (mATX)</b> - é outro formato menor, com menos slots, usado em gabinetes mais compactos
+                </p>
+                <p> <b>Mini-ITX</b> - é o menor dos formatos físicos, possuindo também um menor número de slots</p>
+            </div>
+
+
+        </div>
+        <div class="bloco">
+            <h2> Slots de Expansão</h2>
+            <p>
+                Os slots de Expansão são espaços que servem para conectar dispositivos de expansão, chips com funções
+                específicas. Existem dois tipos desses slots.
+            </p>
+            <p>
+                PCI Express (PCIe) - é o slot maior (com x16), usado principalmente para conectar placas de vídeo
+                dedicadas, podendo ser usado também para conecetar placas de som, captura, rede, etc.
+            </p>
+            <p>
+                PCI (PCI) - é um slot mais antigo, menor (x4-x8), com as mesmas utilidades do PCIe, porém mais limitado
+                devido aos slots, menos moderno e menos utilizado.
+            </p>
+
+        </div>
+        <div class="bloco">
+            <h2> Slots de Armazenamento </h2>
+            <p>
+                Na placa-mãe, existem dois tipos de slots que conectam os dispositivos de armazenamento:
+            </p>
+            <p>
+                SATA - As entradas SATA são slots que se conectam diretamente com os HDs ou SSDs SATA tradicionais.
+            </p>
+            <p>
+                M.2 - As entradas M.2 são mais modernas, e a principal diferença das entradas SATA, é que elas são
+                usadas geralmente para conectar SSDs NVME, entretanto, algumas entradas, a depender das especificações,
+                podem ser conectadas também em SSDs SATA (nem todos).
+            </p>
+
+        </div>
+
+        <div class="bloco">
+            <h2> Conectores USB e Periféricos </h2>
+            <p>
+                A placa-mãe possui também conectores para entradas de dispositivos externos e periféricos, como
+                portas USB, HDMI ou DisplayPort (para monitores por exemplo), Fan Headers (entradas que conectam às
+                ventoinhas), RGB Headers (entradas que controlam o padrão RGB do gabinete), Audio Headers (entradas
+                que conectam com o painel de áudio do gabinete), etc. De forma geral, são conectores úteis porém não
+                essenciais.
+
+            </p>
+        </div>
+
+        <div class="bloco">
+            <h2> Conectores de Fonte </h2>
+            <p>
+                A placa mãe é conectada diretamente na fonte, mais especificamente na entrada ATX 20 + 4 (ou 24 pinos).
+                Ela recebe energia diretamente da fonte para distribuir entre todos os outros componentes conectados.
+            </p>
+            <p>
+                Outra entrada conectada com a fonte de forma direta, é a entrada ATX 12v (ou EPS12V), que é um conector
+                auxiliar com 4 a 8 pinos no total, e é responsável por trazer energia para a CPU.
+            </p>
+            <p>
+                Por último, há o conector PCIe 6/8 pinos, que é um conector que conecta a fonte com a GPU (além do slot
+                PCIe, que fornece energia da própria placa-mãe).
+            </p>
+
+        </div>
+
+
+        <div class="bloco">
+            <h2>Chipset </h2>
+            <p>
+                O chipset é como a configuração da placa-mãe. É ele que vai controlar os recursos que a placa suporta,
+                então por exemplo, se a placa suporta overclock, se tem um número mais limitado de entradas USB, etc).
+            <p>
+                Como já foi citado anteriormente, existem dois tipos de soquete para a placa-mãe: os soquetes AMD e os
+                soquetes Intel. Os chipsets seguem o mesmo padrão, e cada fabricante possui modelos (chipset) de placas.
+            </p>
+
+        </div>
+
+
+
+        <div class="vertical">
+            <div class="horizontal">
+                <div class="bloco">
+                    <h3>Intel </h3> <!-- tem que arrumar essa pora aqui, centralizar-->
+                    <p>
+                        Z-series - Sofisticadas, costumam possuir muitos recursos,
+                        incluindo overclock e dissipador de calor para o VRM.
+                    </p>
+                    <p>
+                        B-series - Intermediárias, possuem batante recursos.
+                    </p>
+                    <p>
+                        H-series - Entrada, possuem quase nada, a maior parte consegue
+                        ligar o computador. São as mais baratas.
+                    </p>
+                </div>
+
+
+                <div class="bloco">
+                    <h3>AMD</h3>
+                    <p>
+                        X-series - Sofisticadas, possuem a habilidade de Overclock,
+                        semelhante a Z-series da Intel.
+                    </p>
+                    <p>
+                        B-series - Intermediárias, também possuem vários recursos,
+                        além de Overclock também.
+                    </p>
+                    <p>
+                        A-series - Básicas, também servem praticamente apenas para
+                        conseguir ligar o PC.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bloco">
+            <h2>Compatibilidade </h2>
+            <p>
+                Para um computador funcionar, é necessário que ele possua peças compatíveis entre sí. Para isso saber a
+                compatibilidade de cada peça durante a montagem de um computador por exemplo, é preciso analisar três
+                peças principais: CPU, memória RAM e placa-mãe.
+            <p>
+                A placa-mãe, pode possuir dois tipos de soquetes para o processador: o Intel e o AMD. De forma resumida,
+                um processador Intel não pode ser encaixado em uma placa-mãe com soquete AMD.
+            </p>
+            <p>
+                Já para a memória RAM, é necessário que os slots DIMM da placa-mãe possuam os mesmos módulos que o da
+                memória, ou seja, para conectar uma memória DDR5 por exemplo, é necessário uma placa-mãe DDR5.
+            </p>
+            <p>
+                Por fim, quanto aos outros componentes, não é necessário mais padrões de compatibilidade, desde que
+                hajam slots suficientes (como slot SATA, ATX 12v, etc.)
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="limitador">
+            <div>
+                <h2>Feito por</h2>
+                <p>Vinícius Wataru Moreira Yokoyama</p>
+                <p>Nicollas Martins de Sousa</p>
+            </div>
+            <div>
+                <h2>Turma</h2>
+                <p>ETESP</p>
+                <p>1º ano</p>
+                <p>Desenvolvimento de Sistemas</p>
+                <p>2025</p>
+            </div>
+            <div>
+                <h2>Orientador</h2>
+                <p>Rodrigo Campos</p>
+            </div>
+            <div>
+                <h2>Certificado W3C</h2>
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!--Feito por Vinícius Wataru Moreira Yokoyama e Nicollas Martins de Sousa - 1º DS 2k25 -->
