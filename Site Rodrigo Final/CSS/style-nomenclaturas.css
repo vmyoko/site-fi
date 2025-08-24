@@ -1,0 +1,292 @@
+div.nomenclatura {
+    margin: 5vw 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+div.detalhes {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+div.detalhamento {
+    margin: 0 0 0 2vw;
+}
+
+/*AMD*/
+p.amd-info {
+    width: auto;
+    margin: 0.25vw;
+    padding: 1vw 0.5vw;
+    position: relative;
+
+    box-shadow: 0 0 0.5vw rgba(255, 0, 0, 0.5);
+
+    text-decoration: none;
+    text-align: left;
+    color: #efefef;
+
+    font-size: 2.5vw;
+    border-radius: 1.5vw;
+    transition: color 500ms;
+}
+
+p.amd-info::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 2vw;
+    background-color: rgba(255, 0, 0, 1);
+    transform: translate(-100%) scaleX(0);
+    transform-origin: center;
+    transition: transform 500ms ease;
+}
+
+p.amd-info:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+p.amd-info:hover {
+    text-shadow: 0 0 0.5vw red;
+}
+
+/*INTEL*/
+p.intel-info {
+    width: auto;
+    margin: 0.25vw;
+    padding: 1vw 0.5vw;
+    position: relative;
+
+    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.5);
+
+    text-decoration: none;
+    text-align: left;
+    color: #efefef;
+
+    font-size: 2.5vw;
+    border-radius: 1.5vw;
+    transition: ease-in-out color 500ms;
+}
+
+p.intel-info::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translate(-100%) scaleX(0);
+    transform-origin: center;
+    transition: transform 500ms ease;
+}
+
+p.intel-info:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+p.intel-info:hover {
+    text-shadow: 0 0 0.5vw white;
+}
+
+/*NVIDIA*/
+p.nvidia-info {
+    width: auto;
+    margin: 0.25vw;
+    padding: 1vw 0.5vw;
+    position: relative;
+
+    box-shadow: 0 0 0.5vw rgba(0, 155, 0, 0.5);
+
+    text-decoration: none;
+    text-align: left;
+    color: #efefef;
+
+    font-size: 2.5vw;
+    border-radius: 1.5vw;
+    transition: ease-in-out color 500ms;
+}
+
+p.nvidia-info::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 2vw;
+    background-color: rgba(0, 155, 0, 1);
+    transform: translate(-100%) scaleX(0);
+    transform-origin: center;
+    transition: transform 500ms ease;
+}
+
+p.nvidia-info:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+p.nvidia-info:hover {
+    text-shadow: 0 0 0.5vw rgba(0, 155, 0, 1);
+}
+
+/*BLOCOS*/
+
+div.amd-bloco{
+    width: 60%;
+
+    padding: 2vw;
+    margin: 2vw auto;
+    border-radius: 1vw;
+
+    background-color: #000;
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 2vw black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.amd-bloco p {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+div.amd-bloco h1 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+div.amd-bloco h2 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+div.intel-bloco {
+    width: 60%;
+
+    padding: 2vw;
+    margin: 2vw auto;
+    border-radius: 1vw;
+
+    background-color: #004b86;
+
+    box-shadow: 0 0 2vw #004b86;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.intel-bloco p {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: 'Inter Tight', sans-serif;
+}
+
+div.intel-bloco h1 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: 'Inter Tight', sans-serif;
+}
+
+div.intel-bloco h2 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: 'Inter Tight', sans-serif;
+}
+
+div.intel-novo-bloco {
+    margin: 1vw;
+    padding: 2vw;
+    border-radius: 1vw;
+
+    background-color: #040e35;
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.intel-antigo-bloco {
+    margin: 1vw;
+    padding: 2vw;
+    border-radius: 1vw;
+
+    background-color: #0155ad;
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.nvidia-bloco {
+    width: 60%;
+
+    padding: 2vw;
+    margin: 2vw auto;
+    border-radius: 1vw;
+
+    background-color: #000;
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 2vw black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.nvidia-bloco p {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Michroma", sans-serif;
+}
+
+div.nvidia-bloco h1 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Michroma", sans-serif;
+}
+
+div.nvidia-bloco h2 {
+    margin: 0.5vw;
+
+    color: white;
+
+    font-family: "Michroma", sans-serif;
+}
